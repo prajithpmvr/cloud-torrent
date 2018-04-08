@@ -56,7 +56,7 @@
 <!-- START TORRENT BUTTONS -->
 <div class="search buttons" ng-show="mode.torrent">
   <div ng-click="submitTorrent()"
-    class="ui tiny blue button"
+    class="ui tiny green button"
     ng-class="{loading: apiing, disabled: apiing }">
     <span ng-show="mode.torrent">Start Torrent</span>
   </div>
@@ -68,7 +68,7 @@
     ng-options="id as s.name for (id, s) in providers">
   </select>
   <div ng-click="submitSearch()"
-    class="ui tiny blue button"
+    class="ui tiny green button"
     ng-class="{loading: searching,
       disabled: noResults || hasMore && results && results.length > 0
     }">
@@ -102,7 +102,7 @@
     <tr ng-if="hasMore">
       <td class="loadmore" colspan="10">
         <div ng-click="submitSearch()"
-          class="ui tiny blue button"
+          class="ui tiny green button"
           ng-class="{loading: searching}">
           Load more
         </div>
@@ -114,7 +114,7 @@
 <!-- MAGNET BUTTONS -->
 <div class="magnet buttons" ng-show="mode.magnet">
   <div ng-click="submitTorrent()"
-    class="ui tiny blue button"
+    class="ui tiny green button"
     ng-class="{loading: apiing}">
     Load Magnet
   </div>
@@ -127,7 +127,7 @@
 <!-- TORRENT BUTTON -->
 <div class="buttons" ng-show="torrent">
   <div ng-click="submitTorrent()"
-    class="ui tiny blue button"
+    class="ui tiny green button"
     ng-class="{loading: apiing}">
     Load Torrent
   </div>

@@ -13,7 +13,7 @@
       <i ng-show="!confirm" ng-click="preremove()" class="red trash icon"></i>
       <i ng-show="!deleting && confirm" ng-click="deleting = true; remove();" class="red check icon"></i>
       <i ng-show="deleting" class="grey notched circle loading icon"></i>
-      <i ng-show="imagePreview || videoPreview || audioPreview" ng-click="togglePreview()" class="blue {{ showPreview ? 'circle outline' : 'video play outline' }} icon"></i>
+      <i ng-show="imagePreview || videoPreview || audioPreview" ng-click="togglePreview()" class="green {{ showPreview ? 'circle outline' : 'video play outline' }} icon"></i>
     </span>
   </div>
   <div class="description">{{ node.Size | bytes }} updated {{ ago(node.Modified) }}</div>

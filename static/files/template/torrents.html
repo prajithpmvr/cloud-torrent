@@ -29,7 +29,7 @@
           </a>
         </div>
         <div class="hash">#{{ t.InfoHash }}</div>
-        <div class="ui blue progress" ng-class="{active: t.Percent > 0 && t.Percent < 100}">
+        <div class="ui green progress" ng-class="{active: t.Percent > 0 && t.Percent < 100}">
           <div class="bar" ng-style="{width: t.Percent + '%'}">
             <div class="progress"></div>
           </div>
@@ -38,7 +38,7 @@
       <div class="controls column">
         <div>
           <div class="ui mini buttons">
-            <a class="ui button" ng-class="{blue: t.$showFiles}" ng-click="t.$showFiles = !t.$showFiles">
+            <a class="ui button" ng-class="{green: t.$showFiles}" ng-click="t.$showFiles = !t.$showFiles">
               <i class="file icon"></i> Files
             </a>
             <a ng-disabled="t.Started" class="ui button" ng-class="{green: !t.Started}" ng-click="submitTorrent('start', t)">
@@ -88,7 +88,7 @@
                 <div>
                   <span>{{ f.Path | filename }}</span>
                   <span class="percent" ng-if="f.Percent > 0 && f.Percent < 100">{{ f.Percent }}% </span>
-                  <div ng-if="f.Percent > 0 && f.Percent < 100" class="ui blue active progress">
+                  <div ng-if="f.Percent > 0 && f.Percent < 100" class="ui green active progress">
                     <div class="bar" ng-style="{width: f.Percent + '%'}">
                       <div class="progress"></div>
                     </div>
